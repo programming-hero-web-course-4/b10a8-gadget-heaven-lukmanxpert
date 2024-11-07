@@ -1,0 +1,113 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "UltraBook Pro 14",
+      "product_image": "https://i.ibb.co.com/TBWktn1/xnp-2.jpg",
+      "category": "laptops",
+      "price": 1099.99,
+      "description": "A powerful and lightweight ultrabook with an immersive display.",
+      "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD", "14-inch Retina Display"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 2,
+      "product_title": "Gaming Beast 17",
+      "product_image": "https://i.ibb.co.com/jVDsp6p/Tong-Fang-GM7-P-002-500x500.jpg",
+      "category": "laptops",
+      "price": 1499.99,
+      "description": "High-performance laptop designed for gamers.",
+      "Specification": ["Intel i9 Processor", "32GB RAM", "1TB SSD", "17-inch 4K Display"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 3,
+      "product_title": "SlimBook X 13",
+      "product_image": "https://i.ibb.co.com/10jyjkt/slimbook-executive-01-652x500.jpg",
+      "category": "laptops",
+      "price": 899.99,
+      "description": "Compact laptop with fast performance and lightweight design.",
+      "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD", "13-inch Full HD Display"],
+      "availability": false,
+      "rating": 4.2
+    },
+    {
+      "product_id": 4,
+      "product_title": "Pro Business 15",
+      "product_image": "https://i.ibb.co.com/ZYnzdgS/81-Z-bkoz3-BL-AC-SL1500.jpg",
+      "category": "laptops",
+      "price": 1299.99,
+      "description": "Designed for business users, with high security and performance.",
+      "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD", "15-inch Full HD Display"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 5,
+      "product_title": "Student Laptop Lite",
+      "product_image": "https://i.ibb.co.com/rG4zsbv/Thin-and-Light-Laptops-for-Education-Pink-Laptop-New-Mini-Laptop-for-Student-2021-Win10-Notebook-Net.jpg",
+      "category": "laptops",
+      "price": 499.99,
+      "description": "Affordable laptop for students with essential features.",
+      "Specification": ["Intel i3 Processor", "4GB RAM", "128GB SSD", "14-inch HD Display"],
+      "availability": true,
+      "rating": 4.0
+    },
+    {
+      "product_id": 6,
+      "product_title": "Creator Studio 16",
+      "product_image": "https://i.ibb.co.com/PcZ9pFp/81-Cd-Q4-DSNYL-AC-UF1000-1000-QL80.jpg",
+      "category": "laptops",
+      "price": 1899.99,
+      "description": "High-end laptop for creators, with a color-accurate display.",
+      "Specification": ["Intel i9 Processor", "32GB RAM", "1TB SSD", "16-inch 4K Display"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": 7,
+      "product_title": "Smartphone X Pro",
+      "product_image": "https://i.ibb.co.com/zHk0qLB/f62ec87f-a0f0-4d90-a5f0-e778e1e9038324060506.jpg",
+      "category": "phones",
+      "price": 999.99,
+      "description": "Flagship smartphone with the latest technology.",
+      "Specification": ["6.5-inch OLED Display", "128GB Storage", "5G Enabled", "Triple Camera"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 8,
+      "product_title": "Smartphone Lite",
+      "product_image": "https://i.ibb.co.com/r2jqnj5/3e6d924fccf23338926f23c9582d97e5-png-720x720q80.png",
+      "category": "phones",
+      "price": 399.99,
+      "description": "Affordable smartphone with essential features.",
+      "Specification": ["6.1-inch LCD Display", "64GB Storage", "Dual Camera"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": 9,
+      "product_title": "Wireless Earbuds Pro",
+      "product_image": "https://i.ibb.co.com/4jtLBn1/airbuds-pro-01-500x500.webp",
+      "category": "accessories",
+      "price": 199.99,
+      "description": "High-quality wireless earbuds with noise cancellation.",
+      "Specification": ["Noise Cancellation", "Bluetooth 5.2", "24-Hour Battery Life"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 10,
+      "product_title": "Smart Watch Fit",
+      "product_image": "https://i.ibb.co.com/QdHcJfB/1-600x600.jpg",
+      "category": "accessories",
+      "price": 149.99,
+      "description": "Smartwatch with fitness tracking features.",
+      "Specification": ["Heart Rate Monitor", "GPS", "5ATM Water Resistance"],
+      "availability": false,
+      "rating": 4.4
+    }
+  ]
+  

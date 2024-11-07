@@ -8,3 +8,6 @@ html{
 body {
   font-family: "Sora", sans-serif;
 }
+.active{
+  background-color: #9538E2;
+}
