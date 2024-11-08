@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import Products from "../components/Products";
 
-const Home = () => {
+const Home = ({handleProductDetailsBtn}) => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState("all-categories");
@@ -36,7 +36,7 @@ const Home = () => {
                     handleCategoryBtn={handleCategoryBtn} 
                     activeCategory={activeCategory}
                 />
-                <Products products={products} />
+                <Products handleProductDetailsBtn={handleProductDetailsBtn} products={products} />
             </div>
         </div>
     );

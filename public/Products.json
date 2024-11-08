@@ -7,7 +7,7 @@
       "price": 1099.99,
       "description": "A powerful and lightweight ultrabook with an immersive display.",
       "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD", "14-inch Retina Display"],
-      "availability": true,
+      "availability": "in-stock",
       "rating": 4.5
     },
     {
@@ -18,7 +18,7 @@
       "price": 1499.99,
       "description": "High-performance laptop designed for gamers.",
       "Specification": ["Intel i9 Processor", "32GB RAM", "1TB SSD", "17-inch 4K Display"],
-      "availability": true,
+      "availability": "in-stock",
       "rating": 4.8
     },
     {
@@ -29,7 +29,7 @@
       "price": 899.99,
       "description": "Compact laptop with fast performance and lightweight design.",
       "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD", "13-inch Full HD Display"],
-      "availability": false,
+      "availability": "out-of-stock",
       "rating": 4.2
     },
     {
@@ -40,7 +40,7 @@
       "price": 1299.99,
       "description": "Designed for business users, with high security and performance.",
       "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD", "15-inch Full HD Display"],
-      "availability": true,
+      "availability": "in-stock",
       "rating": 4.6
     },
     {
@@ -51,7 +51,7 @@
       "price": 499.99,
       "description": "Affordable laptop for students with essential features.",
       "Specification": ["Intel i3 Processor", "4GB RAM", "128GB SSD", "14-inch HD Display"],
-      "availability": true,
+      "availability": "upcoming",
       "rating": 4.0
     },
     {
@@ -62,7 +62,7 @@
       "price": 1899.99,
       "description": "High-end laptop for creators, with a color-accurate display.",
       "Specification": ["Intel i9 Processor", "32GB RAM", "1TB SSD", "16-inch 4K Display"],
-      "availability": false,
+      "availability": "in-stock",
       "rating": 4.9
     },
     {
@@ -73,7 +73,7 @@
       "price": 999.99,
       "description": "Flagship smartphone with the latest technology.",
       "Specification": ["6.5-inch OLED Display", "128GB Storage", "5G Enabled", "Triple Camera"],
-      "availability": true,
+      "availability": "out-of-stock",
       "rating": 4.7
     },
     {
@@ -84,7 +84,7 @@
       "price": 399.99,
       "description": "Affordable smartphone with essential features.",
       "Specification": ["6.1-inch LCD Display", "64GB Storage", "Dual Camera"],
-      "availability": true,
+      "availability": "upcoming",
       "rating": 4.3
     },
     {
@@ -95,7 +95,7 @@
       "price": 199.99,
       "description": "High-quality wireless earbuds with noise cancellation.",
       "Specification": ["Noise Cancellation", "Bluetooth 5.2", "24-Hour Battery Life"],
-      "availability": true,
+      "availability": "in-stock",
       "rating": 4.6
     },
     {
@@ -106,7 +106,7 @@
       "price": 149.99,
       "description": "Smartwatch with fitness tracking features.",
       "Specification": ["Heart Rate Monitor", "GPS", "5ATM Water Resistance"],
-      "availability": false,
+      "availability": "in-stock",
       "rating": 4.4
     }
   ]
