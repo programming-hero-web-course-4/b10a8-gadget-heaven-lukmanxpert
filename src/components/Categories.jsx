@@ -1,13 +1,19 @@
-const Categories = ({handleCategoryBtn}) => {
+const Categories = ({ handleCategoryBtn, activeCategory }) => {
+    const categories = ['all-categories', 'laptops', 'phones', 'accessories', 'smart-watches'];
+
     return (
-        <div>
-            <nav className="shadow flex flex-col p-4 gap-2 font-bold rounded-lg text-2xl">
-                <button className="btn" onClick={()=>handleCategoryBtn('all-categories')}>All Categories</button>
-                <button className="btn" onClick={()=>handleCategoryBtn('laptops')}>Laptops</button>
-                <button className="btn" onClick={()=>handleCategoryBtn('phones')}>Phones</button>
-                <button className="btn" onClick={()=>handleCategoryBtn('accessories')}>Accessories</button>
-                <button className="btn" onClick={()=>handleCategoryBtn('smart-watches')}>Smart Watches</button>
-            </nav>
+        <div className="flex flex-col space-y-2">
+            {categories.map((category) => (
+                <button
+                    key={category}
+                    onClick={() => handleCategoryBtn(category)}
+                    className={`px-4 hover:border-purple-600 border-2 py-2 rounded ${
+                        activeCategory === category ? 'active' : ''
+                    }`}
+                >
+                    {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
+                </button>
+            ))}
         </div>
     );
 };
