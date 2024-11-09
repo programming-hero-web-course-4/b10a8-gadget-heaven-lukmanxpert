@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 const Nav = () => {
@@ -28,7 +28,7 @@ const Nav = () => {
                         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
                     </ul>
                 </div>
-                <a className="btn text-white btn-ghost text-xl">Gadget Heaven</a>
+                <Link to='/' className="btn text-white btn-ghost text-xl">Gadget Heaven</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -39,8 +39,8 @@ const Nav = () => {
             </div>
             <div className="navbar-end">
                 <div className="flex gap-6">
-                    <div className="cursor-pointer"><FaCartShopping className="p-3 h-10 w-10 bg-white rounded-full  text-black" /></div>
-                    <div className="cursor-pointer"><FaHeart className="p-3 h-10 w-10 bg-white rounded-full  text-black" /></div>
+                    <Link to='/dashboard' className="cursor-pointer"><FaCartShopping className="p-3 h-10 w-10 bg-white rounded-full  text-black" /></Link>
+                    <Link to='/dashboard' className="cursor-pointer"><FaHeart className="p-3 h-10 w-10 bg-white rounded-full  text-black" /></Link>
                 </div>
             </div>
         </div>
