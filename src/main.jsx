@@ -12,10 +12,6 @@ import Dashboard from './pages/Dashboard';
 import ProductDetails from './pages/ProductDetails';
 
 function App() {
-  const [product, setProduct] = useState([]);
-  const handleProductDetailsBtn = (product) => {
-    setProduct(product);
-  };
 
   const router = createBrowserRouter([
     {
@@ -24,11 +20,11 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Home handleProductDetailsBtn={handleProductDetailsBtn} />
+          element: <Home />
         },
         {
           path: '/home',
-          element: <Home handleProductDetailsBtn={handleProductDetailsBtn} />
+          element: <Home />
         },
         {
           path: '/statistic',
@@ -39,8 +35,9 @@ function App() {
           element: <Dashboard />
         },
         {
-          path: '/product-details',
-          element: <ProductDetails product={product} />
+          path: '/product-details/:id',
+          loader : ()=> fetch('../Products.json'),
+          element: <ProductDetails />
         }
       ]
     }

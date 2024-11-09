@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Product = ({ product, handleProductDetailsBtn }) => {
-    const {product_image, product_title, description} = product;
+    const {product_id ,product_image, product_title, description} = product;
     return (
         <div className="card card-compact bg-base-100 shadow-2xl">
             <figure>
@@ -13,7 +13,7 @@ const Product = ({ product, handleProductDetailsBtn }) => {
                 <h2 className="card-title">{product_title}</h2>
                 <p>{description}</p>
                 <div className="card-actions justify-start">
-                    <Link to='/product-details' onClick={()=>handleProductDetailsBtn(product)} className="btn btn-primary text-purple-700 hover:text-white rounded-3xl bg-transparent">View Details</Link>
+                    <Link to={`/product-details/${product_id}`} className="btn btn-primary text-purple-700 hover:text-white rounded-3xl bg-transparent">View Details</Link>
                 </div>
             </div>
         </div>

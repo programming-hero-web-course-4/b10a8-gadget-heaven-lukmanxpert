@@ -1,8 +1,12 @@
 import Title from "../components/Title";
 import { CiHeart } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
-const ProductDetails = ({ product }) => {
-    const { product_title, product_image, category, price, description, Specification, availability, rating } = product;
+import { useLoaderData, useParams } from "react-router-dom";
+const ProductDetails = () => {
+    const products = useLoaderData();
+    const {id} = useParams();
+    const theProduct = products.find(pro => pro.product_id === parseInt(id));
+    const { product_title, product_image, price, description, Specification, availability, rating } = theProduct;
     return (
         <div className="bg-gray-100 md:relative flex flex-col justify-center">
             <div className="bg-banner lg:pb-52">
@@ -26,7 +30,7 @@ const ProductDetails = ({ product }) => {
                         <h1 className="font-bold text-lg">Specifications : </h1>
                         <ol className="list-decimal list-inside">
                             {
-                                Specification.map((spec) => <li className="text-lg text-[rgba(9,8,15,0.6)]">{spec}</li>)
+                                Specification.map((spec, idx) => <li key={idx} className="text-lg text-[rgba(9,8,15,0.6)]">{spec}</li>)
                             }
                         </ol>
                     </div>
