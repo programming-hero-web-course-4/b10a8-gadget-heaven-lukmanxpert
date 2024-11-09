@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Statistic from './pages/Statistic';
 import Dashboard from './pages/Dashboard';
 import ProductDetails from './pages/ProductDetails';
+import Cart from './components/Cart';
+import Wishlish from './components/Wishlish';
 
 function App() {
 
@@ -32,7 +34,17 @@ function App() {
         },
         {
           path: '/dashboard',
-          element: <Dashboard />
+          element: <Dashboard />,
+          children : [
+            {
+              path : '/dashboard/cart',
+              element : <Cart></Cart>
+            },
+            {
+              path : '/dashboard/wishlist',
+              element : <Wishlish></Wishlish>
+            }
+          ]
         },
         {
           path: '/product-details/:id',

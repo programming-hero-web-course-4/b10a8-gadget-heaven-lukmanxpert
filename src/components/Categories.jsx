@@ -7,11 +7,11 @@ const Categories = ({ handleCategoryBtn, activeCategory }) => {
                 <button
                     key={category}
                     onClick={() => handleCategoryBtn(category)}
-                    className={`px-4 hover:border-purple-600 border-2 py-2 rounded ${
+                    className={`px-4 hover:border-purple-600 border-2 py-2 rounded-3xl ${
                         activeCategory === category ? 'active' : ''
                     }`}
                 >
-                    {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
+                    {category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
             ))}
         </div>
