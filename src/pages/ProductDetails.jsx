@@ -3,7 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-const ProductDetails = ({handleAddToCart}) => {
+const ProductDetails = ({handleAddToCart, handleWishList}) => {
     const products = useLoaderData();
     const {id} = useParams();
     const theProduct = products.find(pro => pro.product_id === parseInt(id));
@@ -38,7 +38,7 @@ const ProductDetails = ({handleAddToCart}) => {
                     <p className="font-bold text-lg">Rating : {rating}</p>
                     <div className="flex gap-6">
                         <button onClick={() => handleAddToCart(theProduct)} className="flex items-center gap-2 bg-banner py-1 px-2 my-2 hover:bg-transparent hover:text-purple-600 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500 rounded-3xl text-white text-sm font-bold">Add To Cart <FaCartShopping /></button>
-                        <button className="border-2 rounded-full h-10 w-10 flex items-center justify-center hover:bg-transparent hover:text-purple-600 hover:border-2 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500">{<CiHeart className="font-bold" />}</button>
+                        <button onClick={() => handleWishList(theProduct)} className="border-2 rounded-full h-10 w-10 flex items-center justify-center hover:bg-transparent hover:text-purple-600 hover:border-2 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500">{<CiHeart className="font-bold" />}</button>
                     </div>
                 </div>
             </div>

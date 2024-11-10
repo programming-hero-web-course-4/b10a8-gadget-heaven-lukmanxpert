@@ -24,11 +24,27 @@ function App() {
       position: "top-center"
     })
   }
+  const [wishedProducts, setWishedProducts] = useState([]);
+  const handleWishList = (wishedProduct) => {
+    const isExist = wishedProducts.find(pro => pro.product_id === wishedProduct.product_id)
+    if (isExist) {
+      toast.warning('Already Added', {
+        position: "top-center"
+      })
+    } else {
+      const newWishedProducts = [...wishedProducts, wishedProduct]
+      setWishedProducts(newWishedProducts)
+      toast.success('Added Succesfully', {
+        position: "top-center"
+      })
+    }
+
+  }
   const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout />,
-      errorElement : <ErrorElement></ErrorElement>,
+      errorElement: <ErrorElement></ErrorElement>,
       children: [
         {
           path: '/',
@@ -44,22 +60,22 @@ function App() {
         },
         {
           path: '/dashboard',
-          element: <Dashboard cartedProducts={cartedProducts}/>,
-          children : [
+          element: <Dashboard cartedProducts={cartedProducts} wishedProducts={wishedProducts} />,
+          children: [
             {
-              path : '/dashboard/cart',
-              element : <Cart></Cart>
+              path: '/dashboard/cart',
+              element: <Cart></Cart>
             },
             {
-              path : '/dashboard/wishlist',
-              element : <Wishlish></Wishlish>
+              path: '/dashboard/wishlist',
+              element: <Wishlish></Wishlish>
             }
           ]
         },
         {
           path: '/product-details/:id',
-          loader : ()=> fetch('../Products.json'),
-          element: <ProductDetails handleAddToCart={handleAddToCart}/>
+          loader: () => fetch('../Products.json'),
+          element: <ProductDetails handleAddToCart={handleAddToCart} handleWishList={handleWishList} />
         }
       ]
     }
