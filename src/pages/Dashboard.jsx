@@ -14,7 +14,7 @@ const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice}) => {
     }
     return (
         <div>
-            <div className="bg-banner">
+            <div className="bg-banner py-4 rounded-t-lg">
                 <Title title1='Dashboard'
                     desc1='Explore the latest gadgets that will take your experience to the next level. From smart devices to'
                     desc2='the coolest accessories, we have it all!'
