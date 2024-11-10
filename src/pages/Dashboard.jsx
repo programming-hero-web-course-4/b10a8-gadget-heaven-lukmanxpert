@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import { Link } from "react-router-dom";
 import Cart from "../components/Cart";
 import Wishlish from "../components/Wishlish";
-const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice}) => {
+const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice, handlePurchaseBtn, setCartedProducts}) => {
     const [active, setActive] = useState('cart')
     const handleToogle = (btn) => {
         if (btn === 'cart') {
@@ -26,7 +26,7 @@ const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice}) => {
             </div>
             <div>
                 {
-                    active === 'cart' && <Cart cartedProducts={cartedProducts} handleSortByPrice={handleSortByPrice}></Cart> || <Wishlish wishedProducts={wishedProducts}></Wishlish>
+                    active === 'cart' && <Cart setCartedProducts={setCartedProducts} handlePurchaseBtn={handlePurchaseBtn} cartedProducts={cartedProducts} handleSortByPrice={handleSortByPrice}></Cart> || <Wishlish wishedProducts={wishedProducts}></Wishlish>
                 }
             </div>
         </div>

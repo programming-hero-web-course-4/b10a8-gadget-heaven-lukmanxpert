@@ -10,7 +10,7 @@ const ProductDetails = ({handleAddToCart, handleWishList}) => {
     const { product_title, product_image, price, description, Specification, availability, rating } = theProduct;
     return (
         <div className="bg-gray-100 md:relative flex flex-col justify-center">
-            <div className="bg-banner lg:pb-52">
+            <div className="bg-banner lg:pb-52 pt-6">
                 <Title title1="Product Details"
                     desc1="Explore the latest gadgets that will take your experience to the next level. From smart devices to"
                     desc2=" the coolest accessories, we have it all!"></Title>
@@ -36,8 +36,8 @@ const ProductDetails = ({handleAddToCart, handleWishList}) => {
                         </ol>
                     </div>
                     <p className="font-bold text-lg">Rating : {rating}</p>
-                    <div className="flex gap-6">
-                        <button onClick={() => handleAddToCart(theProduct)} className="flex items-center gap-2 bg-banner py-1 px-2 my-2 hover:bg-transparent hover:text-purple-600 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500 rounded-3xl text-white text-sm font-bold">Add To Cart <FaCartShopping /></button>
+                    <div className="flex items-center gap-6">
+                        <button onClick={() => handleAddToCart(theProduct)} className="flex items-center gap-2 bg-banner p-2 my-2 hover:bg-transparent hover:text-purple-600 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500 rounded-3xl text-white text-sm font-bold">Add To Cart <FaCartShopping /></button>
                         <button onClick={() => handleWishList(theProduct)} className="border-2 rounded-full h-10 w-10 flex items-center justify-center hover:bg-transparent hover:text-purple-600 hover:border-2 hover:border-purple-600 hover:shadow-[inset_0_0_0_2px_theme('colors.purple.600')] transition-all duration-500">{<CiHeart className="font-bold" />}</button>
                     </div>
                 </div>

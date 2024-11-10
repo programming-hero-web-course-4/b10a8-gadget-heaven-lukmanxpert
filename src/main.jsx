@@ -45,6 +45,9 @@ function App() {
     }
 
   }
+  const handlePurchaseBtn = () => {
+    document.getElementById('my_modal_1').showModal();
+  }
   const router = createBrowserRouter([
     {
       path: "/",
@@ -65,7 +68,7 @@ function App() {
         },
         {
           path: '/dashboard',
-          element: <Dashboard handleSortByPrice={handleSortByPrice} cartedProducts={cartedProducts} wishedProducts={wishedProducts} />,
+          element: <Dashboard setCartedProducts={setCartedProducts} handlePurchaseBtn={handlePurchaseBtn} handleSortByPrice={handleSortByPrice} cartedProducts={cartedProducts} wishedProducts={wishedProducts} />,
           children: [
             {
               path: '/dashboard/cart',
@@ -83,9 +86,9 @@ function App() {
           element: <ProductDetails handleAddToCart={handleAddToCart} handleWishList={handleWishList} />
         },
         {
-          path : '/upcoming-products',
-          element : <UpcomingProducts></UpcomingProducts>,
-          loader : () => fetch('../UpcomingProducts.json')
+          path: '/upcoming-products',
+          element: <UpcomingProducts></UpcomingProducts>,
+          loader: () => fetch('../UpcomingProducts.json')
         }
       ]
     }
