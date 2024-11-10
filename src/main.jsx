@@ -24,6 +24,10 @@ function App() {
       position: "top-center"
     })
   }
+  const handleSortByPrice = () => {
+    const sortedProducts = [...cartedProducts].sort((a, b) => b.price - a.price);
+    setCartedProducts(sortedProducts);
+  };
   const [wishedProducts, setWishedProducts] = useState([]);
   const handleWishList = (wishedProduct) => {
     const isExist = wishedProducts.find(pro => pro.product_id === wishedProduct.product_id)
@@ -60,7 +64,7 @@ function App() {
         },
         {
           path: '/dashboard',
-          element: <Dashboard cartedProducts={cartedProducts} wishedProducts={wishedProducts} />,
+          element: <Dashboard handleSortByPrice={handleSortByPrice} cartedProducts={cartedProducts} wishedProducts={wishedProducts} />,
           children: [
             {
               path: '/dashboard/cart',
