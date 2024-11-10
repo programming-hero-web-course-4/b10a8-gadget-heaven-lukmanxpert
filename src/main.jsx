@@ -1,5 +1,6 @@
 import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 import {
   createBrowserRouter,
@@ -12,16 +13,22 @@ import Dashboard from './pages/Dashboard';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './components/Cart';
 import Wishlish from './components/Wishlish';
+import { toast } from 'react-toastify';
+import ErrorElement from './components/ErrorElement';
 function App() {
   const [cartedProducts, setCartedProducts] = useState([]);
   const handleAddToCart = (cartedProduct) => {
     const newCartedProducts = [...cartedProducts, cartedProduct]
     setCartedProducts(newCartedProducts)
+    toast.success('Added Succesfully', {
+      position: "top-center"
+    })
   }
   const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout />,
+      errorElement : <ErrorElement></ErrorElement>,
       children: [
         {
           path: '/',
