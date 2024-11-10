@@ -12,9 +12,12 @@ import Dashboard from './pages/Dashboard';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './components/Cart';
 import Wishlish from './components/Wishlish';
-
 function App() {
-
+  const [cartedProducts, setCartedProducts] = useState([]);
+  const handleAddToCart = (cartedProduct) => {
+    const newCartedProducts = [...cartedProducts, cartedProduct]
+    setCartedProducts(newCartedProducts)
+  }
   const router = createBrowserRouter([
     {
       path: "/",
@@ -34,7 +37,7 @@ function App() {
         },
         {
           path: '/dashboard',
-          element: <Dashboard />,
+          element: <Dashboard cartedProducts={cartedProducts}/>,
           children : [
             {
               path : '/dashboard/cart',
@@ -49,7 +52,7 @@ function App() {
         {
           path: '/product-details/:id',
           loader : ()=> fetch('../Products.json'),
-          element: <ProductDetails />
+          element: <ProductDetails handleAddToCart={handleAddToCart}/>
         }
       ]
     }

@@ -2,7 +2,7 @@ import Title from "../components/Title";
 import { CiHeart } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
 import { useLoaderData, useParams } from "react-router-dom";
-const ProductDetails = () => {
+const ProductDetails = ({handleAddToCart}) => {
     const products = useLoaderData();
     const {id} = useParams();
     const theProduct = products.find(pro => pro.product_id === parseInt(id));
@@ -36,7 +36,7 @@ const ProductDetails = () => {
                     </div>
                     <p className="font-bold text-lg">Rating : {rating}</p>
                     <div className="flex gap-6">
-                        <button className="flex items-center gap-2 bg-banner py-1 px-2 my-2 rounded-3xl text-white text-sm font-bold">Add To Cart <FaCartShopping /></button>
+                        <button onClick={() => handleAddToCart(theProduct)} className="flex items-center gap-2 bg-banner py-1 px-2 my-2 rounded-3xl text-white text-sm font-bold">Add To Cart <FaCartShopping /></button>
                         <button className="border-2 rounded-full h-10 w-10 flex items-center justify-center">{<CiHeart className="font-bold" />}</button>
                     </div>
                 </div>

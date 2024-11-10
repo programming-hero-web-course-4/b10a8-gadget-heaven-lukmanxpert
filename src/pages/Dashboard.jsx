@@ -3,7 +3,7 @@ import Title from "../components/Title";
 import { Link } from "react-router-dom";
 import Cart from "../components/Cart";
 import Wishlish from "../components/Wishlish";
-const Dashboard = () => {
+const Dashboard = ({cartedProducts}) => {
     const [active, setActive] = useState('cart')
     const handleToogle = (btn) => {
         if (btn === 'cart') {
@@ -26,7 +26,7 @@ const Dashboard = () => {
             </div>
             <div>
                 {
-                    active === 'cart' && <Cart></Cart> || <Wishlish></Wishlish>
+                    active === 'cart' && <Cart cartedProducts={cartedProducts}></Cart> || <Wishlish></Wishlish>
                 }
             </div>
         </div>
