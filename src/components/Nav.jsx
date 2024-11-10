@@ -4,7 +4,7 @@ import { FaCartShopping } from "react-icons/fa6";
 const Nav = () => {
     const {pathname} = useLocation();
     return (
-        <div className={`navbar ${pathname === '/home'? 'bg-banner' : 'bg-transparent'} rounded-t-lg mt-8`}>
+        <div className={`navbar ${pathname === '/home' || pathname === '/' ? 'bg-banner' : 'bg-transparent'} rounded-t-lg mt-8`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
