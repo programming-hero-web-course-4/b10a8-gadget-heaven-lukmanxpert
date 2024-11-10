@@ -15,12 +15,13 @@ import Cart from './components/Cart';
 import Wishlish from './components/Wishlish';
 import { toast } from 'react-toastify';
 import ErrorElement from './components/ErrorElement';
+import UpcomingProducts from './pages/UpcomingProducts';
 function App() {
   const [cartedProducts, setCartedProducts] = useState([]);
   const handleAddToCart = (cartedProduct) => {
     const newCartedProducts = [...cartedProducts, cartedProduct]
     setCartedProducts(newCartedProducts)
-    toast.success('Added Succesfully', {
+    toast.success('Added to cart successfully', {
       position: "top-center"
     })
   }
@@ -38,7 +39,7 @@ function App() {
     } else {
       const newWishedProducts = [...wishedProducts, wishedProduct]
       setWishedProducts(newWishedProducts)
-      toast.success('Added Succesfully', {
+      toast.success('Added to wishlist successfully', {
         position: "top-center"
       })
     }
@@ -80,6 +81,11 @@ function App() {
           path: '/product-details/:id',
           loader: () => fetch('../Products.json'),
           element: <ProductDetails handleAddToCart={handleAddToCart} handleWishList={handleWishList} />
+        },
+        {
+          path : '/upcoming-products',
+          element : <UpcomingProducts></UpcomingProducts>,
+          loader : () => fetch('../UpcomingProducts.json')
         }
       ]
     }

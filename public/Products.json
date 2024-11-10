@@ -29,7 +29,7 @@
       "price": 899.99,
       "description": "Compact laptop with fast performance and lightweight design.",
       "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD", "13-inch Full HD Display"],
-      "availability": "out-of-stock",
+      "availability": "in-stock",
       "rating": 4.2
     },
     {
@@ -51,7 +51,7 @@
       "price": 499.99,
       "description": "Affordable laptop for students with essential features.",
       "Specification": ["Intel i3 Processor", "4GB RAM", "128GB SSD", "14-inch HD Display"],
-      "availability": "upcoming",
+      "availability": "in-stock",
       "rating": 4.0
     },
     {
@@ -73,7 +73,7 @@
       "price": 999.99,
       "description": "Flagship smartphone with the latest technology.",
       "Specification": ["6.5-inch OLED Display", "128GB Storage", "5G Enabled", "Triple Camera"],
-      "availability": "out-of-stock",
+      "availability": "in-stock",
       "rating": 4.7
     },
     {
@@ -84,7 +84,7 @@
       "price": 399.99,
       "description": "Affordable smartphone with essential features.",
       "Specification": ["6.1-inch LCD Display", "64GB Storage", "Dual Camera"],
-      "availability": "upcoming",
+      "availability": "in-stock",
       "rating": 4.3
     },
     {

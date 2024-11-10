@@ -26,6 +26,7 @@ const Nav = () => {
                         <li><NavLink to='/home'>Home</NavLink></li>
                         <li><NavLink to='/statistic'>Statistic</NavLink></li>
                         <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+                        <li><NavLink to='/upcoming-products'>Upcoming Products</NavLink></li>
                     </ul>
                 </div>
                 <Link to='/' className="btn text-white btn-ghost text-xl">Gadget Heaven</Link>
@@ -35,6 +36,7 @@ const Nav = () => {
                     <li><NavLink to='/home'>Home</NavLink></li>
                     <li><NavLink to='/statistic'>Statistic</NavLink></li>
                     <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+                    <li><NavLink to='/upcoming-products'>Upcoming Products</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">

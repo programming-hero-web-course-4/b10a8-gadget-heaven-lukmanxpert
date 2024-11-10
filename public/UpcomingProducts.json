@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Noise-Canceling Headphones",
+      "releaseDate": "2024-12-15",
+      "price": 299.99,
+      "description": "Premium noise-canceling headphones with up to 30 hours of battery life and fast charging.",
+      "imageUrl": "https://i.ibb.co.com/stvQM4G/Anker-s-Soundcore-Space-One-20230829-151132-full.jpg",
+      "status": "coming soon"
+    },
+    {
+      "id": 2,
+      "name": "Smart Home Speaker",
+      "releaseDate": "2025-01-05",
+      "price": 149.99,
+      "description": "A smart home speaker with voice control, multi-room audio support, and high-quality sound.",
+      "imageUrl": "https://i.ibb.co.com/0QSX6M9/Stuff-Smart-Home-Speakers-2022-LEAD.webp",
+      "status": "coming soon"
+    },
+    {
+      "id": 3,
+      "name": "4K Ultra HD Smart TV",
+      "releaseDate": "2024-12-20",
+      "price": 999.99,
+      "description": "65-inch 4K Ultra HD Smart TV with HDR support, Dolby Atmos, and built-in streaming apps.",
+      "imageUrl": "https://i.ibb.co.com/wS7F7Y7/de0d3686-4766-11ee-8cfb-8ee861fd9236.webp",
+      "status": "coming soon"
+    },
+    {
+      "id": 4,
+      "name": "Wireless Charging Station",
+      "releaseDate": "2025-02-10",
+      "price": 59.99,
+      "description": "Compact wireless charging station compatible with multiple devices and fast charging capability.",
+      "imageUrl": "https://i.ibb.co.com/Dp4JfrC/2-9c55cfe6-120a-4ce3-b22a-ebeb38e778fa.webp",
+      "status": "coming soon"
+    },
+    {
+      "id": 5,
+      "name": "Next-Gen Gaming Console",
+      "releaseDate": "2025-03-01",
+      "price": 499.99,
+      "description": "A next-gen gaming console with ray tracing, 120 FPS support, and a large game library.",
+      "imageUrl": "https://i.ibb.co.com/4js6GhR/PS5-release.jpg",
+      "status": "coming soon"
+    }
+  ]
+  
