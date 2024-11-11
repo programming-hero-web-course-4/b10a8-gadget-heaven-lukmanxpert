@@ -3,7 +3,8 @@ import Title from "../components/Title";
 import { Link } from "react-router-dom";
 import Cart from "../components/Cart";
 import Wishlish from "../components/Wishlish";
-const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice, handlePurchaseBtn, setCartedProducts}) => {
+import { Helmet } from "react-helmet";
+const Dashboard = ({ cartedProducts, wishedProducts, handleSortByPrice, handlePurchaseBtn, setCartedProducts }) => {
     const [active, setActive] = useState('cart')
     const handleToogle = (btn) => {
         if (btn === 'cart') {
@@ -14,6 +15,11 @@ const Dashboard = ({cartedProducts, wishedProducts, handleSortByPrice, handlePur
     }
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Dashboard | Gadget Heaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="bg-banner py-4 rounded-t-lg">
                 <Title title1='Dashboard'
                     desc1='Explore the latest gadgets that will take your experience to the next level. From smart devices to'

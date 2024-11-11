@@ -1,15 +1,21 @@
+import { Helmet } from "react-helmet";
 import Title from "../components/Title";
 import { CiHeart } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-const ProductDetails = ({handleAddToCart, handleWishList}) => {
+const ProductDetails = ({ handleAddToCart, handleWishList }) => {
     const products = useLoaderData();
-    const {id} = useParams();
+    const { id } = useParams();
     const theProduct = products.find(pro => pro.product_id === parseInt(id));
     const { product_title, product_image, price, description, Specification, availability, rating } = theProduct;
     return (
         <div className="bg-gray-100 md:relative flex flex-col justify-center">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Product Details | Gadget Heaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="bg-banner lg:pb-52 pt-6">
                 <Title title1="Product Details"
                     desc1="Explore the latest gadgets that will take your experience to the next level. From smart devices to"
