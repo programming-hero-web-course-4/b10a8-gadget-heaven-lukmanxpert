@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This project is a dynamic e-commerce website designed for users to explore, sort, and purchase a wide range of tech gadgets and accessories. Built with React, the site offers a clean, responsive interface and prioritizes an intuitive user experience. Users can view detailed information on each product, add items to their shopping cart or wishlist, and sort or filter products by different attributes such as price and rating.
+This project is a dynamic e-commerce website designed for users to explore, sort, and purchase a wide range of tech gadgets and accessories. Built with React, the site offers a responsive interface and prioritizes an intuitive user experience. Users can view detailed information on each product, add items to their shopping cart or wishlist, and sort or filter products by different attributes such as price and rating.
 
 ## React Fundamentals Used
 
